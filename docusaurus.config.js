@@ -48,22 +48,6 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          routeBasePath: '/',
-          editUrl: 'https://github.com/bpftrace/bpftrace',
-          versions: {
-            current: {
-              label: 'pre-release',
-            },
-            'latest': {
-              path: 'latest',
-              label: `latest (${getLatestVersion()})`,
-            },
-            '0.22': {
-              banner: 'none',
-            },
-          },
-        },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
@@ -87,90 +71,11 @@ const config = {
           href: 'https://bpftrace.org',
           target: '_self',
         },
-        items: [
-          {
-            to: 'https://bpftrace.org/learn',
-            label: 'Learn',
-            target: '_self',
-            position: 'left',
-          },
-          {
-            to: `${getLatestVersion()}`,
-            label: 'Docs',
-            target: '_self', // open external link in current window
-            position: 'left',
-            className: 'navbar__link--active',
-          },
-          {
-            to: 'https://bpftrace.org/blog',
-            label: 'Blog',
-            target: '_self',
-            position: 'left',
-          },
-          {
-            href: 'https://github.com/bpftrace/bpftrace/discussions',
-            label: 'Discussions',
-            target: '_self',
-            position: 'left',
-          },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/bpftrace/bpftrace',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+        items: [],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs + Tutorials',
-            items: [
-              {
-                label: 'Documentation',
-                to: `${getLatestVersion()}`,
-                target: '_self',
-              },
-              {
-                label: 'One-Liner Introduction Tutorial',
-                to: 'https://bpftrace.org/tutorial-one-liners',
-                target: '_self',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'IRC',
-                href: 'https://webchat.oftc.net/?nick=&channels=%23bpftrace',
-              },
-              {
-                label: 'Talks',
-                href: 'https://bpftrace.org/videos',
-                target: '_self',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'https://bpftrace.org/blog',
-                target: '_self',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/bpftrace/bpftrace',
-              },
-            ],
-          },
-        ],
+        links: [],
         copyright: `Copyright © 2019 Alastair Robertson.`,
       },
       prism: {
