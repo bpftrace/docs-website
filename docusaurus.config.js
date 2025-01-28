@@ -5,16 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-import versions from './versions.json';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
-function getLatestVersion() {
-  // versions[0] is "latest", versions[1] will contain the actual version number
-  // of the latest version
-  return versions[1];
-}
-const latestVersion = getLatestVersion();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -55,9 +47,6 @@ const config = {
       }),
     ],
   ],
-  customFields: {
-    latestVersion,
-  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
