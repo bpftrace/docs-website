@@ -3,7 +3,6 @@
   <!-- This is used as a redirect for the old docs website. We can probably remove at some point -->
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://bpftrace.org/docs/pre-release">
     <link rel="canonical" href="https://bpftrace.org/docs/pre-release" />
   </head>
   <script>
